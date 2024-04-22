@@ -1,12 +1,16 @@
 import "./App.css";
-import Footer from "./components/Footer";
+import About from "./pages/About";
+import ContactUs from "./pages/ContactUs";
 import Home from "./pages/Home";
+import WhyUs from "./pages/WhyUs";
 
 function App() {
     return (
         <>
             <Home />
-            <Footer />
+            <WhyUs />
+            <About />
+            <ContactUs />
         </>
     );
 }

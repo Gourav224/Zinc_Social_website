@@ -9,9 +9,10 @@ const Home = () => {
             <div className="grid grid-cols-2   sm:gap-3">
                 <div className="col-span-1 my-auto ml-8">
                     <div className="mt-24">
-                        <h1 className="text-customBlue font-extrabold text-4xl  md:text-7xl">
+                        <h1 className="text-customBlue font-extrabold text-4xl  md:text-6xl">
                             ZINC Social
                         </h1>
+
                         <h2 className="text-black text-l md:text-2xl lg:text-3xl font-normal mt-4 md:mt-6">
                             where investors connect and conquer
                         </h2>

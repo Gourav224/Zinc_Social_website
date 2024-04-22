@@ -1,9 +1,6 @@
-import React from 'react'
 
 const WhyUs = () => {
-  return (
-    <div>WhyUs</div>
-  )
-}
+    return <div className="h-screen bg-customBlue"></div>;
+};
 
-export default WhyUs
+export default WhyUs;
