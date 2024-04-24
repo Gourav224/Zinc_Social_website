@@ -4,7 +4,7 @@ import vector from "../assets/vector.svg";
 
 const Home = () => {
     return (
-        <div className="min-h-screen ">
+        <div className="sm:max-h-screen">
             <Navbar />
             <div className="grid grid-cols-2   sm:gap-3">
                 <div className="col-span-1 my-auto ml-8">

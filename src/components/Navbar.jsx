@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import  { useState, useEffect } from "react";
 import Logo from "../assets/Logo.svg";
 import mobileLogo from "../assets/mobileLogo.svg";
+import Button from "./Button";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,10 +57,11 @@ const Navbar = () => {
             </div>
 
             {/* Button for larger screens */}
-            <div className="mr-2 md:mr-4 lg:mr-8 ml-auto">
-                <button className="bg-customBlue text-white px-2 py-1 rounded hover hidden sm:block">
+            <div className="mr-2 md:mr-4 lg:mr-8 ml-auto hidden sm:block">
+                <Button>
+                    {" "}
                     Try now
-                </button>
+                </Button>
             </div>
 
             <div className="navbar-container mt-3 ">
