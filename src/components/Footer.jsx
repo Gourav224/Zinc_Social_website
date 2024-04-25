@@ -3,26 +3,37 @@ import Location from "../assets/Location.svg";
 import Email from "../assets/Email.svg";
 const Footer = () => {
     return (
-        <footer className="bg-customBlue text-white h-24 sm:h-36 flex items-center justify-between  px-12 gap-x-12  w-full text-[8px] sm:text-sm ">
-            <div className=" sm:ml-8">
-                <p className="flex items-center gap-2">
-                    <img src={Email} className="w-4 sm:w-auto" />
-                    zinc.fintech@gmail.com
-                </p>
-                <p className="flex gap-2 items-center my-2 ">
-                    <img src={Phone} className="w-4 sm:w-auto" />
-                    +91 9891800371
-                </p>
-            </div>
-            <div className="flex items-center text-right w-48 sm:w-72 sm:mr-8 ">
-                <img
-                    src={Location}
-                    className="w-3 sm:w-5  relative left-3 bottom-2 sm:origin-top-left sm:left-14"
-                />
-
-                <p className="">
-                    Bawana Rd, Delhi Technological University, Rohini, New Delhi
-                </p>
+        <footer className="bg-customBlue grid  text-white h-36 sm:h-48 w-full  ">
+            <div className="text-xs sm:text-base flex  items-center justify-between ">
+                <div className="ml-4 sm:ml-12 w-1/2 sm:w-1/4 ">
+                    <p className="flex items-center gap-2">
+                        <img
+                            src={Email}
+                            className="w-4 sm:w-auto"
+                            alt="Email Icon"
+                        />
+                        zinc.fintech@gmail.com
+                    </p>
+                    <p className="flex gap-2 items-center my-2">
+                        <img
+                            src={Phone}
+                            className="w-4 sm:w-auto"
+                            alt="Phone Icon"
+                        />
+                        +91 9891800371
+                    </p>
+                </div>
+                <div className="w-1/2 md:w-1/4 mr-4 sm:mr-12  flex items-start  text-right ">
+                    <img
+                        src={Location}
+                        className="h-[12px] top-[2px] sm:h-[16px] relative left-12 sm:left-24 md:left-[106px] sm:top-1 "
+                        alt="Location Icon"
+                    />
+                    <p className="line-clamp-2">
+                        Bawana Rd, Delhi Technological University,Rohini, New
+                        Delhi
+                    </p>
+                </div>
             </div>
         </footer>
     );

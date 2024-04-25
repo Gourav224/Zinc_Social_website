@@ -7,7 +7,7 @@ const MailInput = React.forwardRef(function MailInput(
     const id = useId();
     return (
         <div className="flex items-center px-3 rounded-lg bg-customInputColor  w-full">
-            <label className=" w-4 sm:w-auto inline-block m-auto my-1" htmlFor={id}>
+            <label className=" w-4 sm:w-auto inline-block mr-2 my-1" htmlFor={id}>
                 <img src={EmailInput} />
             </label>
             <input

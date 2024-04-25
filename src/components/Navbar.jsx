@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../assets/Logo.svg";
 import mobileLogo from "../assets/mobileLogo.svg";
 import Button from "./Button";
@@ -57,8 +57,8 @@ const Navbar = () => {
             </div>
 
             {/* Button for larger screens */}
-            <div className="mr-2 md:mr-4 lg:mr-8 ml-auto hidden sm:block">
-                <Button>
+            <div className=" mr-2 md:mr-4 lg:mr-8 ml-auto hidden sm:block">
+                <Button className="m-auto py-1 rounded-lg px-2">
                     {" "}
                     Try now
                 </Button>
