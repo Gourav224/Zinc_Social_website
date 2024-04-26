@@ -1,6 +1,6 @@
 import Phone from "../assets/Phone.svg";
 import Location from "../assets/Location.svg";
-import Email from "../assets/Email.svg";
+import Email from "../assets/email.svg";
 const Footer = () => {
     return (
         <footer className="bg-customBlue grid  text-white h-36 sm:h-48 w-full  ">
