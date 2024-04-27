@@ -31,7 +31,7 @@ const Card = ({ imageUrl, description }) => {
   
     return (
       <>
-      <div className="sm:h-screen bg-gradient-to-b from-white to-customBlue">
+      <div id="WhyUs" className="sm:h-screen bg-gradient-to-b from-white to-customBlue">
               <div className="w-full text-center ">
                   <h2 className="text-customBlue block  mt-12 px-auto text-2xl font-extrabold leading-snug">
                       Why Us?
