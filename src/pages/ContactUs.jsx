@@ -16,7 +16,7 @@ const ContactUs = () => {
         }
     };
     return (
-        <div className="max-h-screen sm:min-h-screen  text-center flex flex-col bg-white">
+        <div id="contact" className="max-h-screen sm:min-h-screen  text-center flex flex-col bg-white">
             <h2 className="text-customBlue block sm:hidden pt-12 mx-auto text-2xl font-semibold leading-snug">
                 Contact us
             </h2>
@@ -36,7 +36,7 @@ const ContactUs = () => {
                             className=""
                         />
                         <Button
-                            className="text-center mt-2 sm:mt-4 w-12 h-6 text-xs  sm:w-16  rounded-lg md:w-20 md:h-12 md:text-2xl"
+                            className="text-center mt-2 md:mt-4 w-12 h-6 text-xs  sm:w-16 sm:h-10 rounded-lg   sm:text-xl"
                             onClick={onClick}
                         >
                             Send

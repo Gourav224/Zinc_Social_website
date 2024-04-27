@@ -4,13 +4,13 @@ import Button from "../components/Button";
 
 const About = () => {
     return (
-        <div className="md:h-screen text-center font-['Inter']">
+        <div id="about" className="sm:min-h-screen text-center font-['Inter']">
             <h2 className="text-customBlue block sm:hidden my-6  text-2xl font-extrabold leading-snug">
                 About
             </h2>
-            <div className="flex sm:hidden  bg-customGray sm:bg-white justify-center items-center">
-                <div className="bg-customGray rounded-lg w-3/5 sm:w-full mx-12 sm:p-8 mt-8 sm:mt-24 sm:mx-auto">
-                    <p className="font-semibold text-black text-sm text-center sm:text-base md:text-2xl p-4 sm:p-8">
+            <div className="flex sm:hidden  bg-customGray  justify-center items-center">
+                <div className="bg-customGray rounded-lg w-3/5  mx-12  mt-8 ">
+                    <p className="font-semibold text-black text-xs text-center  p-3">
                         The premier social media platform revolutionizing the
                         way investors connect and thrive! Dive into a dynamic
                         ecosystem where financial knowledge meets community
@@ -32,7 +32,7 @@ const About = () => {
 
             {/* Rendering images side by side on larger screens */}
             <div className="hidden sm:block w-full ">
-                <div className="bg-customGray rounded-lg mx-44 my-12  py-16 px-8">
+                <div className="bg-customGray rounded-lg mx-32 md:mx-44 my-12  py-16 px-8">
                     <p className="font-[500] text-black text-xl text-center mx-auto max-w-[800px] ">
                         The premier social media platform revolutionizing the
                         way investors connect and thrive! Dive into a dynamic
@@ -43,9 +43,9 @@ const About = () => {
                         wealth creation and financial freedom.
                     </p>
                 </div>
-                <div className="flex justify-between  ">
-                    <img src={emailSvg} alt="Email Icon" className="max-w-96" />
-                    <img src={businessInvestmentSvg}  className="max-w-96"/>
+                <div className="flex justify-between  w-full">
+                    <img src={emailSvg} alt="Email Icon" className="max-w-72 md:max-w-96" />
+                    <img src={businessInvestmentSvg}  className="max-w-72 md:max-w-96"/>
                 </div>
             </div>
         </div>
