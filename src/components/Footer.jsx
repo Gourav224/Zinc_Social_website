@@ -26,11 +26,11 @@ const Footer = () => {
                 <div className="w-1/2 md:w-1/4 mr-4 sm:mr-12  flex items-start  text-right ">
                     <img
                         src={Location}
-                        className="h-[12px] top-[2px] sm:h-[16px] relative left-12 sm:left-24 md:left-[106px] sm:top-1 "
+                        className="h-[12px] top-[2px] sm:h-[16px] relative start  "
                         alt="Location Icon"
                     />
                     <p className="line-clamp-2">
-                        Bawana Rd, Delhi Technological University,Rohini, New
+                        Bawana Rd, Delhi Technological University, Rohini, New
                         Delhi
                     </p>
                 </div>
