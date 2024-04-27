@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Logo from "../assets/Logo.svg";
 import mobileLogo from "../assets/mobileLogo.svg";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,6 +18,16 @@ const Navbar = () => {
             setIsMenuOpen(false);
         }
     };
+    const navigate = useNavigate();
+    // Function to scroll to a specific section
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+            navigate(`/${sectionId}`)
+        }
+        setIsMenuOpen(false); // Close the menu after scrolling
+    };
 
     // Add event listener when the component mounts
     useEffect(() => {
@@ -27,30 +38,31 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className=" flex items-center   justify-between bg-customBlue sm:bg-white px-6">
+        <nav className="w-full flex items-center   justify-between bg-customBlue sm:bg-white px-6">
             <div className="flex items-center cursor-pointer">
                 {/* Logo for big screen */}
                 <img src={Logo} alt="Logo" className="hidden sm:block h-20 " />
 
-                {/* Logo for moblie screen */}
-
-                <img
-                    src={mobileLogo}
-                    alt="Logo"
-                    className="block sm:hidden h-16 "
-                />
+                {/* Logo for mobile screen */}
+                <img src={mobileLogo} alt="Logo" className="block sm:hidden h-16 " />
 
                 {/* Menu for larger screens */}
                 <div className="hidden sm:block ml-4">
                     <ul className="flex">
                         <li className="mx-8">
-                            <a href="#">Why Us?</a>
+                            <button onClick={() => scrollToSection("why-us")}>
+                                Why Us?
+                            </button>
                         </li>
                         <li className="mx-8">
-                            <a href="#">About</a>
+                            <button onClick={() => scrollToSection("about")}>
+                                About
+                            </button>
                         </li>
                         <li className="mx-8">
-                            <a href="#">Contact Us</a>
+                            <button onClick={() => scrollToSection("contact")}>
+                                Contact Us
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -87,19 +99,19 @@ const Navbar = () => {
                     <div className="sm:hidden absolute top-13 right-0 pt-3 mr-4 bg-customBlue text-white rounded-lg shadow-lg">
                         <ul className="px-4 py-3 flex flex-col gap-1">
                             <li>
-                                <a href="#" className=" underline text-white">
+                                <button onClick={() => scrollToSection("why-us")}>
                                     Why Us?
-                                </a>
+                                </button>
                             </li>
                             <li>
-                                <a href="#" className="underline text-white">
+                                <button onClick={() => scrollToSection("about")}>
                                     About
-                                </a>
+                                </button>
                             </li>
                             <li>
-                                <a href="#" className="underline text-white">
+                                <button onClick={() => scrollToSection("contact")}>
                                     Contact Us
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </div>

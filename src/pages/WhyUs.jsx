@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const Card = ({ imageUrl, description }) => {
@@ -7,9 +8,12 @@ const Card = ({ imageUrl, description }) => {
         <div className="p-4">
           <p className="text-lg text-center font-semibold mb-2">{description}</p>
          
+
+
         </div>
       </div>
     );
+
   };
   
   const WhyUs = () => {
@@ -48,4 +52,4 @@ const Card = ({ imageUrl, description }) => {
   };
   
   export default WhyUs;
-  
+
