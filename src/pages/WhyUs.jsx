@@ -1,55 +1,57 @@
+import Carousel from "../components/Carousel";
 
-import React from "react";
-
-const Card = ({ imageUrl, description }) => {
+const WhyUs = () => {
     return (
-      <div className="flex-shrink-0 w-64 mx-4 overflow-hidden rounded-lg shadow-lg">
-        <img className="w-full h-48 object-cover" src={imageUrl} alt="Card" />
-        <div className="p-4">
-          <p className="text-lg text-center font-semibold mb-2">{description}</p>
-         
-
-
+        <div id="why-us" className=" sm:min-h-screen relative sm:bg-gradient-to-b sm:from-white sm:to-customBlue">
+            <div className="w-full text-center ">
+                <h2 className="text-customBlue block sm:hidden mt-12 px-auto text-2xl font-extrabold leading-snug">
+                    why us ?
+                </h2>
+            </div>
+            <div className="mt-8">
+                <Carousel />
+            </div>
+            <svg
+                width="1280"
+                height="312"
+                viewBox="0 0 1280 312"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute bottom-0 inset-x-0 w-full "
+            >
+                <g filter="url(#filter0_f_513_467)">
+                    <path
+                        d="M-149.392 408.159C-116.524 322.241 31.1156 49.9999 596.659 50C1162.2 50.0001 1380 322.241 1380 408.159C1380 494.077 1380 575 1380 575H-149.392C-149.392 575 -182.26 494.077 -149.392 408.159Z"
+                        fill="#0073E6"
+                    />
+                </g>
+                <defs>
+                    <filter
+                        id="filter0_f_513_467"
+                        x="-214"
+                        y="0"
+                        width="1644"
+                        height="625"
+                        filterUnits="userSpaceOnUse"
+                        colorInterpolationFilters="sRGB"
+                    >
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="BackgroundImageFix"
+                            result="shape"
+                        />
+                        <feGaussianBlur
+                            stdDeviation="25"
+                            result="effect1_foregroundBlur_513_467"
+                        />
+                    </filter>
+                </defs>
+            </svg>
         </div>
-      </div>
     );
+};
 
-  };
-  
-  const WhyUs = () => {
-    // Sample data for cards
-    const cards = [
-      {
-        imageUrl: "https://via.placeholder.com/300",
-        description: "Next-level tools, personalized insights.",
-      },
-      {
-        imageUrl: "https://via.placeholder.com/300",
-        description:"Your financial network, Connected." ,
-      },
-      {
-        imageUrl: "https://via.placeholder.com/300",
-        description: "Secure Investment",
-      },
-    ];
-  
-    return (
-      <>
-      <div id="WhyUs" className="sm:h-screen bg-gradient-to-b from-white to-customBlue">
-              <div className="w-full text-center ">
-                  <h2 className="text-customBlue block  mt-12 px-auto text-2xl font-extrabold leading-snug">
-                      Why Us?
-                  </h2>
-                  </div>
-      <div className="flex overflow-x-auto no-scrollbar justify-between m-20 p-4" >
-        {cards.map((card, index) => (
-          <Card key={index} imageUrl={card.imageUrl} description={card.description} />
-        ))}
-      </div>
-      </div>
-      </>
-    );
-  };
-  
-  export default WhyUs;
 
+export default WhyUs;

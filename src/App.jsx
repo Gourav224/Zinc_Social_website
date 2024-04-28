@@ -1,5 +1,4 @@
 import "./App.css";
-
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
 import Home from "./pages/Home";
@@ -9,8 +8,7 @@ function App() {
     return (
         <>
             <Home />
-            <WhyUs/>
-           
+            <WhyUs />
             <About />
             <ContactUs />
         </>
