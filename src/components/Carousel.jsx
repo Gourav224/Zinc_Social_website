@@ -5,38 +5,34 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import { FreeMode, Pagination } from "swiper/modules";
 
-import CarouselPic1 from "../assets/CarouselPic1.jpeg";
-import CarouselPic2 from "../assets/CarouselPic2.jpeg";
-import CarouselPic3 from "../assets/CarouselPic3.jpeg";
-
 const cardData = [
     {
         description: "Secure investment discussions",
-        src: CarouselPic1,
+        src: "https://res.cloudinary.com/gourav224/image/upload/v1714293596/zinc/yf67hm7zpsjyiap2ixi0.jpg",
     },
     {
         description: "Your financial network. Connected.",
-        src: CarouselPic2,
+        src: "https://res.cloudinary.com/gourav224/image/upload/v1714293596/zinc/qtoivf2zf1otqzmcpnjs.jpg",
     },
     {
         description: "Next-level tools, personalized insights.",
-        src: CarouselPic3,
+        src: "https://res.cloudinary.com/gourav224/image/upload/v1714293589/zinc/alu9v2mvu5oz9gbfnpv3.jpg",
     },
 ];
-
 const Carousel = () => {
     return (
-        <div className="flex items-center justify-center  ">
+        <div className="flex items-center justify-center   ">
             <Swiper
                 breakpoints={{
                     0: {
                         slidesPerView: 1,
-                        spaceBetween: 20,
+                        spaceBetween: 15,
                     },
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 40,
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 15,
                     },
+                    
                     
                 }}
                 freeMode={true}
@@ -44,11 +40,11 @@ const Carousel = () => {
                     clickable: true,
                 }}
                 modules={[FreeMode, Pagination]}
-                className="max-w-[90%] lg:max-w-[80%]"
+                className="w-full"
             >
                 {cardData.map((card, index) => (
                     <SwiperSlide key={index}>
-                        <div className="flex flex-col items-center px-6 pb-8    cursor-pointer">
+                        <div className="flex flex-col items-center gap-2 px-6 pb-8    cursor-pointer">
                             <Card description={card.description} src={card.src} />
                         </div>
                     </SwiperSlide>
@@ -59,19 +55,3 @@ const Carousel = () => {
 };
 
 export default Carousel;
-
-
-
-   // return (
-    //     <div className="carousel">
-    //         <div className="flex gap-4">
-    //             {cardData.map((card, index) => (
-    //                 <Card
-    //                     key={index}
-    //                     description={card.description}
-    //                     src={card.src}
-    //                 />
-    //             ))}
-    //         </div>
-    //     </div>
-    // );

@@ -4,10 +4,10 @@ import vector from "../assets/vector.svg";
 
 const Home = () => {
     return (
-        <div className="sm:min-h-screen">
+        <div className="max-h-screen sm:min-h-screen">
             <Navbar />
             <div className="grid grid-cols-2   sm:gap-3">
-                <div className="col-span-1 my-auto ml-8">
+                <div className="col-span-1 my-auto ml-8 lg:ml-16">
                     <div className="mt-24">
                         <h1 className="text-customBlue font-extrabold text-4xl  md:text-6xl">
                             ZINC Social

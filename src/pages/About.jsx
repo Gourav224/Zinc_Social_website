@@ -10,8 +10,8 @@ const About = () => {
             </h2>
             <div className="flex sm:hidden  bg-customGray  justify-center items-center">
                 <div className="bg-customGray rounded-lg w-3/5  mx-12  mt-8 ">
-                    <p className="font-semibold text-black text-xs text-center  p-3">
-                        The premier social media platform revolutionizing the
+                    <p className="font-semibold text-black text-xs  leading-sung text-center  pb-3">
+                        The Premier social media platform revolutionizing the
                         way investors connect and thrive! Dive into a dynamic
                         ecosystem where financial knowledge meets community
                         support, empowering you to make informed decisions and
@@ -33,8 +33,8 @@ const About = () => {
             {/* Rendering images side by side on larger screens */}
             <div className="hidden sm:block w-full ">
                 <div className="bg-customGray rounded-lg mx-32 md:mx-44 my-12  py-16 px-8">
-                    <p className="font-[500] text-black text-xl text-center mx-auto max-w-[800px] ">
-                        The premier social media platform revolutionizing the
+                    <p className="font-semibold  text-black text-xl text-center mx-auto max-w-[800px] ">
+                        The Premier social media platform revolutionizing the
                         way investors connect and thrive! Dive into a dynamic
                         ecosystem where financial knowledge meets community
                         support, empowering you to make informed decisions and

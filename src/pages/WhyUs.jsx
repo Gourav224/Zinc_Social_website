@@ -2,7 +2,7 @@ import Carousel from "../components/Carousel";
 
 const WhyUs = () => {
     return (
-        <div id="why-us" className=" sm:min-h-screen relative sm:bg-gradient-to-b sm:from-white sm:to-customBlue">
+        <div id="why-us" className="max-h-screen md:min-h-screen relative sm:bg-gradient-to-b sm:from-white sm:to-customBlue">
             <div className="w-full text-center ">
                 <h2 className="text-customBlue block sm:hidden mt-12 px-auto text-2xl font-extrabold leading-snug">
                     why us ?

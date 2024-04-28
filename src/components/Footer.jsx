@@ -3,37 +3,42 @@ import Location from "../assets/Location.svg";
 import Email from "../assets/email.svg";
 const Footer = () => {
     return (
-        <footer className="bg-customBlue grid  text-white h-36 sm:h-48 w-full  ">
-            <div className="text-xs sm:text-base flex  items-center justify-between ">
-                <div className="ml-4 sm:ml-12 w-1/2 sm:w-1/4 ">
-                    <p className="flex items-center gap-2">
-                        <img
-                            src={Email}
-                            className="w-4 sm:w-auto"
-                            alt="Email Icon"
-                        />
-                        zinc.fintech@gmail.com
-                    </p>
-                    <p className="flex gap-2 items-center my-2">
-                        <img
-                            src={Phone}
-                            className="w-4 sm:w-auto"
-                            alt="Phone Icon"
-                        />
-                        +91 9891800371
-                    </p>
-                </div>
-                <div className="w-1/2 md:w-1/4 mr-4 sm:mr-12  flex items-start  text-right ">
-                    <img
-                        src={Location}
-                        className="h-[12px] top-[2px] sm:h-[16px] relative left-12 sm:left-24 md:left-[106px] sm:top-1 "
-                        alt="Location Icon"
-                    />
-                    <p className="line-clamp-2">
-                        Bawana Rd, Delhi Technological University,Rohini, New
-                        Delhi
-                    </p>
-                </div>
+        <footer className="bg-customBlue grid grid-cols-1  sm:grid-cols-2  place-content-center  text-white  h-48 2xl:h-72 w-full text-xl ">
+            <div className="mt-4 ml-16 sm:m-auto">
+                <ul className="flex flex-col items-start ">
+                    <li>
+                        <div className="flex items-center justify-center gap-2">
+                            <li>
+                                {" "}
+                                <img src={Email} alt="Email Icon" />
+                            </li>
+                            <li  className="text-sm sm:text-base">zinc.fintech@gmail.com</li>
+                        </div>
+                    </li>
+                    <li className="mt-2 sm:mt-0">
+                        <div className="flex justify-center gap-2">
+                            <li>
+                                {" "}
+                                <img src={Phone} alt="Email Icon" />
+                            </li>
+                            <li className="text-sm sm:text-base">+91 9891800371</li>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div className="mt-2 ml-16 sm:m-auto">
+                <ul className="flex flex-col items-start">
+                    <li>
+                        <div className="flex items-center justify-center gap-2">
+                            <li>
+                                {" "}
+                                <img src={Location} alt="Location Icon" />
+                            </li>
+                            <li className="text-sm sm:text-base" > Bawana Rd, Delhi Technological</li>
+                        </div>
+                    </li>
+                    <li className="ml-8 text-sm sm:text-base"> University, Rohini, New Delhi</li>
+                </ul>
             </div>
         </footer>
     );

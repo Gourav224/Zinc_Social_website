@@ -6,7 +6,7 @@ export default {
             colors: {
                 customBlue: "#0073E6",
                 customGray: "#EFF2F8",
-                customInputColor:"#DEDEDE",
+                customInputColor: "#DEDEDE",
             },
         },
     },
